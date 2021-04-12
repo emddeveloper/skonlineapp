@@ -1,0 +1,27 @@
+<table class="ui celled table" *ngIf="records">
+  <thead>
+    <tr>
+      <th>Cash</th>
+      <th>Jio Balance</th>
+      <th>Bandhan Bank</th>
+      <th>Credits</th>
+      <th>Total</th>
+      <th>Profits</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records">
+      <td data-label="Cash">{{ record.cash }}</td>
+      <td data-label="Jio Balance">{{ record.jio }}</td>
+      <td data-label="Bandhan Bank">{{ record.bank }}</td>
+      <td data-label="Credits">{{ record.credit }}</td>
+      <td data-label="Total">{{ record.total }}</td>
+      <td data-label="Profits">{{ record.profit }}</td>
+      <td data-label="Profits">{{ record.timestamp | date: "short" }}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="ui active inverted dimmer" *ngIf="!records">
+  <div class="ui large text loader">Loading</div>
+</div>

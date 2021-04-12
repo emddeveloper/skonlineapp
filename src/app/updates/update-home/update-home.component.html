@@ -1,0 +1,40 @@
+<div class="ui form">
+  {{ latestData | json }}
+  <div class="field">
+    <label>Cash</label>
+    <input
+      type="number"
+      [(ngModel)]="latestData.cash"
+      name="cash"
+      placeholder="Cash"
+    />
+  </div>
+
+  <div class="field">
+    <label>Jio Balance</label>
+    <input
+      type="number"
+      [(ngModel)]="latestData.jio"
+      placeholder="Jio Balance"
+    />
+  </div>
+  <div class="field">
+    <label>Bandhan Bank</label>
+    <input
+      type="number"
+      [(ngModel)]="latestData.bank"
+      placeholder="Bandhan Bank"
+    />
+  </div>
+  <div class="field">
+    <label>Credits</label>
+    <input
+      type="number"
+      [(ngModel)]="latestData.credit"
+      placeholder="Credits"
+    />
+  </div>
+  <div class="ui divider"></div>
+  <button class="ui button" routerLink="">Discard</button>
+  <button class="ui primary button" (click)="updateRecordSubmit()">Save</button>
+</div>
