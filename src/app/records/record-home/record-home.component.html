@@ -1,4 +1,4 @@
-<table class="ui celled table">
+<table class="ui celled table" *ngIf="records">
   <thead>
     <tr>
       <th>Cash</th>
@@ -11,14 +11,17 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td data-label="Cash">James</td>
-      <td data-label="Jio Balance">24</td>
-      <td data-label="Bandhan Bank">Engineer</td>
-      <td data-label="Credits">James</td>
-      <td data-label="Total">24</td>
-      <td data-label="Profits">Engineer</td>
-      <td data-label="Profits">10-02-2021 12:21</td>
+    <tr *ngFor="let record of records">
+      <td data-label="Cash">{{ record.cash }}</td>
+      <td data-label="Jio Balance">{{ record.jio }}</td>
+      <td data-label="Bandhan Bank">{{ record.bank }}</td>
+      <td data-label="Credits">{{ record.credit }}</td>
+      <td data-label="Total">{{ record.total }}</td>
+      <td data-label="Profits">{{ record.profit }}</td>
+      <td data-label="Profits">{{ record.timestamp | date: "short" }}</td>
     </tr>
   </tbody>
 </table>
+<div class="ui active inverted dimmer" *ngIf="!records">
+  <div class="ui large text loader">Loading</div>
+</div>
