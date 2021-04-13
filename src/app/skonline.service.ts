@@ -4,11 +4,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class SkonlineService {
+  baseApiUrl = 'https://skonlineapi.herokuapp.com';
   constructor(private http: HttpClient) {}
   public getData() {
-    return this.http.get(
-      'https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords'
-    );
+    return this.http.get(this.baseApiUrl + '/records');
   }
   public updateRecord(params: any) {
     return this.http.post(
