@@ -1,4 +1,4 @@
-<div class="ui form">
+<div class="ui form" *ngIf="!loader">
   {{ latestData | json }}
   <div class="field">
     <label>Cash</label>
@@ -37,4 +37,7 @@
   <div class="ui divider"></div>
   <button class="ui button" routerLink="">Discard</button>
   <button class="ui primary button" (click)="updateRecordSubmit()">Save</button>
+</div>
+<div class="ui active inverted dimmer" *ngIf="loader">
+  <div class="ui large text loader">Loading</div>
 </div>
