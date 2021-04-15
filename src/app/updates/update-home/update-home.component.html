@@ -1,5 +1,6 @@
 <div class="ui form" *ngIf="!loader">
   {{ latestData | json }}
+
   <div class="field">
     <label>Cash</label>
     <input
@@ -32,6 +33,15 @@
       type="number"
       [(ngModel)]="latestData.credit"
       placeholder="Credits"
+    />
+  </div>
+  <div class="field">
+    <label>Profit Reference Rs.</label>
+    <input
+      (change)="getProfitrefdate()"
+      type="number"
+      [(ngModel)]="latestData.profitref"
+      placeholder="Profit Reference Rs."
     />
   </div>
   <div class="ui divider"></div>

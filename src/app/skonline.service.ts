@@ -10,14 +10,15 @@ export class SkonlineService {
     return this.http.get(this.baseApiUrl + '/records');
   }
   public updateRecord(params: any) {
-    return this.http.post(
-      'https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords',
-      params
-    );
+    const headers = {
+      Authorization: 'Bearer my-token',
+      'My-Custom-Header': 'foobar',
+    };
+    return this.http.post(this.baseApiUrl + '/addrecord', params, {
+      headers,
+    });
   }
   public getLatestRecord() {
-    return this.http.get(
-      'https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords/1'
-    );
+    return this.http.get(this.baseApiUrl + '/latest');
   }
 }

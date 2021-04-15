@@ -17,15 +17,22 @@ __webpack_require__.r(__webpack_exports__);
 class SkonlineService {
     constructor(http) {
         this.http = http;
+        this.baseApiUrl = 'https://skonlineapi.herokuapp.com';
     }
     getData() {
-        return this.http.get('https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords');
+        return this.http.get(this.baseApiUrl + '/records');
     }
     updateRecord(params) {
-        return this.http.post('https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords', params);
+        const headers = {
+            Authorization: 'Bearer my-token',
+            'My-Custom-Header': 'foobar',
+        };
+        return this.http.post(this.baseApiUrl + '/addrecord', params, {
+            headers,
+        });
     }
     getLatestRecord() {
-        return this.http.get('https://6073ee79066e7e0017e788f5.mockapi.io/getrecords/getrecords/1');
+        return this.http.get(this.baseApiUrl + '/latest');
     }
 }
 SkonlineService.ɵfac = function SkonlineService_Factory(t) { return new (t || SkonlineService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
