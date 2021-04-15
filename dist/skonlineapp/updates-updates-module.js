@@ -90,19 +90,27 @@ function UpdateHomeComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function UpdateHomeComponent_div_0_Template_input_ngModelChange_18_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.latestData.credit = $event; });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "button", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Discard");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "label");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Profit Reference Rs.");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "button", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function UpdateHomeComponent_div_0_Template_button_click_22_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.updateRecordSubmit(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Save");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "input", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("change", function UpdateHomeComponent_div_0_Template_input_change_22_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.getProfitrefdate(); })("ngModelChange", function UpdateHomeComponent_div_0_Template_input_ngModelChange_22_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r8.latestData.profitref = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Discard");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function UpdateHomeComponent_div_0_Template_button_click_26_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r9.updateRecordSubmit(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Save");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 5, ctx_r0.latestData), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](2, 6, ctx_r0.latestData), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r0.latestData.cash);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
@@ -111,10 +119,12 @@ function UpdateHomeComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r0.latestData.bank);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r0.latestData.credit);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r0.latestData.profitref);
 } }
 function UpdateHomeComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Loading");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -124,11 +134,15 @@ class UpdateHomeComponent {
         this.skonline = skonline;
         this.balance = 1000;
         this.latestData = {
-            cash: '',
-            jio: '',
-            bank: '',
-            credit: '',
+            cash: 0,
+            jio: 0,
+            bank: 0,
+            credit: 0,
+            profitref: 0,
+            profit: 0,
+            profitrefdate: {},
             timestamp: {},
+            total: 0,
         };
         this.loader = false;
     }
@@ -139,19 +153,33 @@ class UpdateHomeComponent {
     }
     updateRecordSubmit() {
         this.loader = true;
+        this.latestData.total = this.getTotal();
+        this.latestData.profit = this.getProfit();
         this.latestData.timestamp = new Date().getTime();
         this.skonline.updateRecord(this.latestData).subscribe((Response) => {
             console.log('submit');
             this.loader = false;
         });
     }
+    getProfitrefdate() {
+        this.latestData.profitrefdate = new Date().getTime();
+    }
+    getTotal() {
+        return (this.latestData.cash +
+            this.latestData.jio +
+            this.latestData.bank +
+            this.latestData.credit);
+    }
+    getProfit() {
+        return this.latestData.total - this.latestData.profitref;
+    }
     ngOnInit() {
         this.getLatestRecord();
     }
 }
 UpdateHomeComponent.ɵfac = function UpdateHomeComponent_Factory(t) { return new (t || UpdateHomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_skonline_service__WEBPACK_IMPORTED_MODULE_1__["SkonlineService"])); };
-UpdateHomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UpdateHomeComponent, selectors: [["app-update-home"]], decls: 2, vars: 2, consts: [["class", "ui form", 4, "ngIf"], ["class", "ui active inverted dimmer", 4, "ngIf"], [1, "ui", "form"], [1, "field"], ["type", "number", "name", "cash", "placeholder", "Cash", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Jio Balance", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Bandhan Bank", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Credits", 3, "ngModel", "ngModelChange"], [1, "ui", "divider"], ["routerLink", "", 1, "ui", "button"], [1, "ui", "primary", "button", 3, "click"], [1, "ui", "active", "inverted", "dimmer"], [1, "ui", "large", "text", "loader"]], template: function UpdateHomeComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, UpdateHomeComponent_div_0_Template, 24, 7, "div", 0);
+UpdateHomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UpdateHomeComponent, selectors: [["app-update-home"]], decls: 2, vars: 2, consts: [["class", "ui form segment", 4, "ngIf"], ["class", "ui active inverted dimmer", 4, "ngIf"], [1, "ui", "form", "segment"], [1, "field"], ["type", "number", "name", "cash", "placeholder", "Cash", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Jio Balance", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Bandhan Bank", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Credits", 3, "ngModel", "ngModelChange"], ["type", "number", "placeholder", "Profit Reference Rs.", 3, "ngModel", "change", "ngModelChange"], [1, "ui", "divider"], ["routerLink", "", 1, "ui", "button"], [1, "ui", "primary", "button", 3, "click"], [1, "ui", "active", "inverted", "dimmer"], [1, "ui", "large", "text", "loader"]], template: function UpdateHomeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, UpdateHomeComponent_div_0_Template, 28, 8, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, UpdateHomeComponent_div_1_Template, 3, 0, "div", 1);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.loader);
