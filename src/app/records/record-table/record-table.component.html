@@ -5,7 +5,9 @@
   <!-- cash Column -->
   <ng-container matColumnDef="Cash">
     <mat-header-cell *matHeaderCellDef> Cash </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.cash }} </mat-cell>
+    <mat-cell *matCellDef="let element" [class.make-gold]="true">
+      {{ element.cash }}
+    </mat-cell>
   </ng-container>
 
   <!-- jio Column -->
@@ -41,8 +43,14 @@
     </mat-cell>
   </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  <mat-header-row
+    *matHeaderRowDef="displayedColumns"
+    class="highlight"
+  ></mat-header-row>
+  <mat-row
+    *matRowDef="let row; columns: displayedColumns"
+    color="primary"
+  ></mat-row>
 </mat-table>
 
 <!-- Copyright 2020 Google LLC. All Rights Reserved.

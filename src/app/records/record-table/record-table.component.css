@@ -1,0 +1,21 @@
+mat-cell:last-of-type {
+  padding-right: 5px;
+  font-size: 11px;
+  color: #fa0689;
+}
+mat-cell:first-of-type {
+  padding-left: 10px;
+  color: #1708ec;
+}
+mat-header-cell:first-of-type {
+  padding-left: 10px;
+}
+mat-header-row {
+  background: #0d8eff;
+}
+mat-header-cell {
+  color: #fff;
+}
+mat-cell.mat-column-Profits {
+  color: #5009d3;
+}
