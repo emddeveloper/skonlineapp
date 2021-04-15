@@ -1,0 +1,50 @@
+<div class="ui active inverted dimmer" *ngIf="!dataSource">
+  <div class="ui large text loader">Loading</div>
+</div>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- cash Column -->
+  <ng-container matColumnDef="Cash">
+    <mat-header-cell *matHeaderCellDef> Cash </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.cash }} </mat-cell>
+  </ng-container>
+
+  <!-- jio Column -->
+  <ng-container matColumnDef="Jio">
+    <mat-header-cell *matHeaderCellDef> jio </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.jio }} </mat-cell>
+  </ng-container>
+  <!-- bank Column -->
+  <ng-container matColumnDef="Bank">
+    <mat-header-cell *matHeaderCellDef> bank </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.bank }} </mat-cell>
+  </ng-container>
+  <!-- credit Column -->
+  <ng-container matColumnDef="Credits">
+    <mat-header-cell *matHeaderCellDef> credit </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.credit }} </mat-cell>
+  </ng-container>
+  <!-- total Column -->
+  <ng-container matColumnDef="Total">
+    <mat-header-cell *matHeaderCellDef> total </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.total }} </mat-cell>
+  </ng-container>
+  <!-- profit Column -->
+  <ng-container matColumnDef="Profits">
+    <mat-header-cell *matHeaderCellDef> profit </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.profit }} </mat-cell>
+  </ng-container>
+  <!-- timestamp Column -->
+  <ng-container matColumnDef="Timestamp">
+    <mat-header-cell *matHeaderCellDef> timestamp </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      {{ element.timestamp | date: "short" }}
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<!-- Copyright 2020 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

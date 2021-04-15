@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RecordHomeComponent } from './record-home/record-home.component';
-
+import { RecordTableComponent } from './record-table/record-table.component';
 const routes: Routes = [
   {
     path: '',
-    component: RecordHomeComponent,
+    component: RecordTableComponent,
   },
 ];
 

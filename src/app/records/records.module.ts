@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RecordsRoutingModule } from './records-routing.module';
-import { RecordHomeComponent } from './record-home/record-home.component';
-
-
+import { MatSliderModule } from '@angular/material/slider';
+import { RecordTableComponent } from './record-table/record-table.component';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
-  declarations: [
-    RecordHomeComponent
-  ],
+  declarations: [RecordTableComponent],
   imports: [
     CommonModule,
-    RecordsRoutingModule
-  ]
+    RecordsRoutingModule,
+    MatSliderModule,
+    MatTableModule,
+  ],
 })
-export class RecordsModule { }
+export class RecordsModule {}
